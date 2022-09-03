@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(image/bg-pattern-top.svg),url(image/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -200px -450px , 870px 450px;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    
+   
+}
+
+.container-fluid{
+    border-radius: 20px;
+    width:440px;
+    height: 450px;
+    margin: 150px auto;
+    background: white;
+}
+#pattern{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+#profile{
+    border-radius: 60px;
+    margin-top: 120px;   
+    margin-left: -270px;
+    position: absolute;
+    border: 5px solid rgb(255, 255, 255);
+    clip-path: circle(55%);
+}
+.name{
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    margin-top: 70px;
+    display:flex;
+    justify-content: center;
+}
+.name span{
+    color: hsl(0, 0%, 59%);
+}
+#place{
+    font-size: 15px;
+    color:hsl(0, 0%, 59%);
+    margin-top:10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+hr{
+    height:3px;
+    border:none;
+    background: hsl(0, 0%, 93%);
+}
+.content{
+    display: flex;
+    padding: 10px;
+    margin: 20px ;
+    justify-content:space-around;
+}
+.followers, .likes, .photos{
+    text-align: center;
+}
+.followers h2 , .likes h2, .photos h2{
+    color:hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+.followers p , .likes p , .photos p{
+    padding-top: 5px;
+    color: hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width:375px){
+        body{
+            background-position: -800px -400px , 100px 400px;
+        }
+        .container-fluid{
+            margin-top: 100px;
+            width: 340px;
+            height: 420px;
+        }
+        #profile{
+            margin-top: 80px;   
+            margin-left: -225px;
+        
+        }  
+}
+
+@media screen and (min-width: 376px) and (max-width: 600px){
+    body{
+        background-position: -600px -400px , 100px 400px;
+    }
+    .container-fluid{
+        margin-top: 200px;
+        width: 340px;
+        height: 420px;
+    }
+    #profile{
+        margin-top: 80px;   
+        margin-left: -225px;
+    }  
+}
+
+@media screen and (min-width: 601px) and (max-width:900px){
+    body{
+        background-position: -500px -400px , 100px 400px;
+    }
+    .container-fluid{
+        margin-top: 200px;
+        width: 340px;
+        height: 420px;
+    }
+    #profile{
+        margin-top: 80px;   
+        margin-left: -225px;
+    }  
+}
